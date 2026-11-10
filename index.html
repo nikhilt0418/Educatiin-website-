@@ -48,11 +48,22 @@
         <p>Find notes and learning resources in one place.</p>
     </section>
 
-    <section id="quiz">
-        <h2>Test Your Knowledge</h2>
-        <p>Practice questions and improve your skills.</p>
-        <button onclick="showMessage()">Start Quiz</button>
-    </section>
+    
+<section id="quiz">
+    <h2>Online Quiz</h2>
+    <p>Test your programming knowledge!</p>
+
+    <div id="quiz-box">
+        <h3 id="question">What does HTML stand for?</h3>
+
+        <button onclick="checkAnswer(0)">Hyper Text Markup Language</button>
+        <button onclick="checkAnswer(1)">High Text Machine Language</button>
+        <button onclick="checkAnswer(2)">Home Tool Markup Language</button>
+
+        <p id="result"></p>
+    </div>
+</section>
+
 
     <footer>
         <p>© 2026 EduSmart | Learn Today, Lead Tomorrow!</p>
