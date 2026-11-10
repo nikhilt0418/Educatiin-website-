@@ -108,3 +108,22 @@ function nextQuestion() {
 }
 
 window.onload = loadQuestion;
+
+
+function loginStudent() {
+    var name = document.getElementById("studentName").value;
+    var email = document.getElementById("studentEmail").value;
+    var password = document.getElementById("studentPassword").value;
+
+    var result = document.getElementById("loginResult");
+
+    if (name === "" || email === "" || password === "") {
+        result.innerHTML = "Please fill all fields!";
+        result.style.color = "red";
+    } 
+    else {
+        result.innerHTML = "Welcome to EduSmart, " + name + "!";
+        result.style.color = "green";
+    }
+}
+
