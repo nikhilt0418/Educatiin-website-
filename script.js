@@ -122,8 +122,11 @@ function loginStudent() {
         result.style.color = "red";
     } 
     else {
-        result.innerHTML = "Welcome to EduSmart, " + name + "!";
-        result.style.color = "green";
-    }
+    document.getElementById("login").style.display = "none";
+    document.getElementById("dashboard").style.display = "block";
+
+    document.getElementById("welcomeStudent").innerHTML =
+        "Welcome, " + name + "!";
+}
 }
 
